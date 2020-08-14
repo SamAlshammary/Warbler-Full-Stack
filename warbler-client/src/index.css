@@ -1,0 +1,96 @@
+body {
+ background-color: #e6ecf0;
+}
+
+/* Nav */
+
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.navbar a {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar a:hover{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first. */
+.navbar-brand > img {
+  display: inline-block;
+  width: 20px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+ul.nav.navbar-nav li {
+  margin: 0 0.5rem;
+}
+
+.onboarding > .navbar {
+  background-image: url("./images/nav-bg.png");
+  background-size: 100% 100%;
+}
+
+/* Landing page */
+
+.home-hero{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  background-image: url('./images/signed-out-home.jpg');
+  text-align: center;
+  padding: 1rem;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 8px #66757f;
+  
+}
+
+
+/* Messages*/
+
+#messages .list-group-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 7px 20px 12px;
+}
+
+/* where if theres an ID of messages that does not have the class of no hover we are going to find all of the elements with a class of list-group-item inside and target their hover statte */
+#messages:not(.no-hover) .list-group-item:hover{
+  background-color: #e6ecf0;
+}
+
+/* Images + Buttons */
+.timeline-image {
+  border-radius: 50px;
+  height: 48px;
+  width: 48px;
+  margin: 2px 30px 10px px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+a.btn.btn-danger, 
+a.btn.btn-danger:hover{
+  color: white;
+}
+
+.navbar-header{
+  margin: 0 auto;
+}
